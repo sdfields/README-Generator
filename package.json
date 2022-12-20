@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/sdfields/README-Generator/issues"
   },
-  "homepage": "https://github.com/sdfields/README-Generator#readme"
+  "homepage": "https://github.com/sdfields/README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
