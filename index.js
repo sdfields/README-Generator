@@ -1,7 +1,11 @@
+// TODO: Include packages needed for this application
+
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-const contents = [
+// TODO: Create an array of questions for user input
+
+const subjects = [
     {
         name: "Description",
         message: "Please type a description of your repository.",
@@ -34,8 +38,11 @@ const contents = [
     },
 ];
 
+// TODO: Create a function to write README file
+// function writeToFile(fileName, data) {}
+
 inquirer
-  .prompt(contents)
+  .prompt(subjects)
   .then((readme) =>
     fs.writeFile('readme.json', JSON.stringify(readme), (error) => {
         return error 
@@ -43,3 +50,9 @@ inquirer
         : console.log('README stored successfully!')
     })
   );
+
+// TODO: Create a function to initialize app
+function init() {}
+
+// Function call to initialize app
+init();
