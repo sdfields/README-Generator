@@ -35,11 +35,11 @@ const contents = [
 ];
 
 inquirer
-  .prompt(questions)
+  .prompt(contents)
   .then((answers) =>
     fs.writeFile('answers.json', JSON.stringify(answers), (error) => {
         return error 
         ? console.error(error) 
-        : console.log('File written successfully')
+        : console.log('README stored successfully!')
     })
   );
