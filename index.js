@@ -1,11 +1,16 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-// TODO: Create an array of questions for user input
+// Array of questions for user input
 
 const subjects = [
+    {
+        name: "Title",
+        message: "Please insert the title of your project.",
+        type: "input",
+    },
     {
         name: "Description",
         message: "Please type a description of your repository.",
@@ -39,7 +44,7 @@ const subjects = [
 ];
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+// function writeToFile(README.md, data) {}
 
 inquirer
   .prompt(subjects)
